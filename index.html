@@ -1,18 +1,24 @@
-```html
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ali Fereidoni | Portfolio</title>
+
+  <title>علی فریدونی | سایت شخصی Ali Fereidoni</title>
+  <meta name="description" content="سایت شخصی علی فریدونی؛ معرفی علاقه‌مندی‌ها، فناوری، ادیت ویدیو، اسکیت و خودرو.">
+  <meta name="author" content="Ali Fereidoni">
+
   <style>
     * { box-sizing: border-box; }
+
     body {
       margin: 0;
       font-family: Arial, sans-serif;
       background: #080b16;
       color: white;
     }
+
     header {
       padding: 25px 8%;
       display: flex;
@@ -20,9 +26,13 @@
       align-items: center;
       border-bottom: 1px solid #252a40;
     }
+
     .logo { color: #55e6ff; font-weight: bold; }
+
     a { color: #55e6ff; text-decoration: none; }
+
     nav a { margin-left: 18px; }
+
     main {
       min-height: 65vh;
       padding: 90px 8%;
@@ -31,10 +41,18 @@
       gap: 40px;
       flex-wrap: wrap;
     }
+
     .intro { flex: 1; min-width: 260px; }
-    h1 { font-size: clamp(38px, 7vw, 68px); margin: 10px 0; }
+
+    h1 {
+      font-size: clamp(38px, 7vw, 68px);
+      margin: 10px 0;
+    }
+
     h1 span { color: #55e6ff; }
+
     .subtitle { color: #b5bfd6; line-height: 1.8; }
+
     .button {
       display: inline-block;
       margin-top: 20px;
@@ -44,6 +62,7 @@
       border-radius: 10px;
       font-weight: bold;
     }
+
     .art {
       flex: 1;
       min-width: 240px;
@@ -53,8 +72,15 @@
       background: radial-gradient(circle, #172c52, #0b1020 70%);
       border-radius: 25px;
     }
+
     section { padding: 30px 8% 70px; }
-    .cards { display: flex; gap: 18px; flex-wrap: wrap; }
+
+    .cards {
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
     .card {
       flex: 1;
       min-width: 180px;
@@ -63,9 +89,29 @@
       border: 1px solid #252d46;
       border-radius: 16px;
     }
-    footer { text-align: center; padding: 25px; color: #9ba8c2; }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      color: #9ba8c2;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        padding: 20px 5%;
+        flex-wrap: wrap;
+        gap: 15px;
+      }
+
+      nav a { margin-left: 10px; }
+
+      main { padding: 55px 6%; }
+
+      section { padding: 25px 6% 45px; }
+    }
   </style>
 </head>
+
 <body>
   <header>
     <div class="logo">ALI FEREIDONI</div>
@@ -81,31 +127,50 @@
       <p class="subtitle">WELCOME TO MY WEBSITE</p>
       <h1>Hi, I'm <span>Ali!</span></h1>
       <p class="subtitle">
-        I'm a student who loves technology, video editing,
-        skating, and cars. I'm learning new skills and building
-        cool projects step by step.
+        I'm Ali Fereidoni (علی فریدونی), a student who loves
+        technology, video editing, skating, and cars.
+        I'm learning new skills and building cool projects
+        step by step.
       </p>
       <a class="button" href="#projects">Explore My Interests ↘</a>
     </div>
+
     <div class="art" aria-label="Car and skateboard">🚗 🛹</div>
   </main>
 
   <section id="about">
-    <h2>About Me</h2>
+    <h2>About Me | درباره من</h2>
     <p class="subtitle">Curious mind. Creative ideas. Big goals.</p>
+    <p class="subtitle">علی فریدونی؛ علاقه‌مند به فناوری، ادیت ویدیو، اسکیت و خودرو.</p>
   </section>
 
   <section id="projects">
     <h2>My Interests</h2>
     <div class="cards">
-      <div class="card"><h3>💻 Technology</h3><p>Exploring computers and programming.</p></div>
-      <div class="card"><h3>🎬 Video Editing</h3><p>Learning to create awesome videos.</p></div>
-      <div class="card"><h3>🛹 Skating</h3><p>One of my favorite hobbies.</p></div>
-      <div class="card"><h3>🚗 Cars</h3><p>Especially the Peugeot 405!</p></div>
+      <div class="card">
+        <h3>💻 Technology</h3>
+        <p>Exploring computers and programming.</p>
+      </div>
+
+      <div class="card">
+        <h3>🎬 Video Editing</h3>
+        <p>Learning to create awesome videos.</p>
+      </div>
+
+      <div class="card">
+        <h3>🛹 Skating</h3>
+        <p>One of my favorite hobbies.</p>
+      </div>
+
+      <div class="card">
+        <h3>🚗 Cars</h3>
+        <p>Especially the Peugeot 405!</p>
+      </div>
     </div>
   </section>
 
-  <footer>Made with ❤️ by Ali Fereidoni</footer>
+  <footer>Made with ❤️ by Ali Fereidoni | علی فریدونی</footer>
 </body>
 </html>
-```
+
+
